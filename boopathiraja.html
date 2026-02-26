@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Boopathi | Java Developer</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-size: cover;
+    color: rgb(220, 234, 116);
+    padding-bottom: 70px;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("bg.jpg");
+    background-size: cover;
+    z-index: -1;
+}
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(236, 192, 70, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.top-nav ul li a {
+    color: rgb(223, 16, 16);
+    font-weight: 500;
+}
+
+.top-nav ul li a:hover {
+    color: #e4e708;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.hero {
+    padding-top: 120px;   
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.hero h1,
+.hero h2,
+.hero p {
+    margin: 10px 0;
+}
+
+.hero h1 span {
+    color: #e47230;
+}
+
+.profile-img {
+    margin-top: 50px;
+}
+
+.profile-img img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.glass {
+    margin: 100px auto;
+    padding: 40px;
+    width: 80%;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+}
+
+.skill {
+    margin: 25px 0;
+}
+
+.bar {
+    background: #444;
+    height: 8px;
+    border-radius: 40px;
+}
+
+.progress {
+    height: 8px;
+    background: #de225a;
+    border-radius: 40px;
+}
+
+.java { width: 90%; }
+.spring { width: 80%; }
+.sql { width: 75%; }
+
+button, .resume-btn {
+    background: #ef3f68;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+button:hover, .resume-btn:hover {
+    background: #ff6b8f;
+    transform: scale(1.05);
+}
+
+.contact-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+}
+
+.contact-container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    flex: 1;
+    color: white;
+}
+
+.contact-info h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.info-item span {
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.contact-form {
+    flex: 1;
+    background: rgba(255,255,255,0.1);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    box-shadow: 0 0 8px #ff6b8f;
+}
+
+.contact-form button {
+    width: 100%;
+}
+
+@media(max-width: 768px){
+    .glass {
+        width: 95%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="top-nav">
+    <div class="logo">Boopathi Raja</div>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Hello, I'm <span>Boopathi Raja</span></h1>
+    <h2>Java Developer</h2>
+    <p>I design scalable backend systems and modern web applications.</p>
+
+
+    <div class="profile-img">
+        <img src="boopathi.jpg" alt="Boopathi">
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="glass">
+    <h2>About Me</h2>
+    <p>
+        Passionate Java developer specializing in backend architecture,
+        REST APIs, and high-performance systems.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="glass">
+    <h2>Skills</h2>
+
+    <div class="skill">
+        <p>Java</p>
+        <div class="bar"><div class="progress java"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Spring Boot</p>
+        <div class="bar"><div class="progress spring"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>SQL</p>
+        <div class="bar"><div class="progress sql"></div></div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="glass">
+    <h2>Projects</h2>
+
+    <h3>E-Commerce Backend</h3>
+    <p>Built scalable REST APIs with authentication & database integration.</p>
+
+    <h3>Student Management System</h3>
+    <p>Developed CRUD application using Spring Boot and MySQL.</p>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="glass">
+    <h2>My Resume</h2>
+    <p>You can download my resume below:</p>
+
+    <a href="boopathi resume.pdf" class="resume-btn" download>
+        📄 Download Resume
+    </a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+
+        <div class="contact-info">
+            <h2>Contact Me</h2>
+            <p>Have a project idea or job opportunity? Let’s talk!</p>
+
+            <div class="info-item">
+                <span>📧</span>
+                <p>boopathi@email.com</p>
+            </div>
+
+            <div class="info-item">
+                <span>📱</span>
+                <p>+91 98765 43210</p>
+            </div>
+
+            <div class="info-item">
+                <span>📍</span>
+                <p>Tamil Nadu, India</p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message 🚀</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
